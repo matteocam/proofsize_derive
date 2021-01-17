@@ -1,0 +1,21 @@
+[package]
+name = "proofsize_derive"
+version = "0.1.0"
+authors = ["Matteo Campanelli <matteo.campanelli@gmail.com>"]
+description = "A custom derive plugin for ProofSize"
+license = "MIT"
+repository = "https://github.com/matteocam/proofsize_derive"
+documentation = "https://docs.rs/proofsize_derive"
+edition = "2018"
+
+[lib]
+name = "proofsize_derive"
+proc-macro = true
+
+[dependencies]
+proc-macro2 = "1.0"
+quote = "1.0"
+synstructure = "0.12"
+
+[dev-dependencies]
+rug-binserial = { git = "https://github.com/matteocam/rug-binserial" }
